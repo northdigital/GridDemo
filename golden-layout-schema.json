@@ -8,9 +8,11 @@
       "minItems": 1,
       "items": {
         "type": "object",
+        "required": ["type", "componentName", "id"],
         "properties": {
           "type": {
             "type": "string",
+            "enum": ["row", "column", "stack", "component", "react-component"],
             "description": "The type of the item. Possible values are 'row', 'column', 'stack', 'component' and 'react-component'"
           },
           "componentName": {
@@ -44,6 +46,9 @@
           "activeItemIndex": {
             "type": "integer",
             "description": "The index of the initially selected tab"
+          },
+          "content": {
+            "type": "array"
           }
         },
         "additionalProperties": false

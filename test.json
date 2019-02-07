@@ -1,9 +1,13 @@
 {
   "content": [
     {
-      "type": "",
+      "type": "row",
+      "id": "test",
       "componentName": "",
       "componentState": {
+      },
+      "content": {
+
       }
     }
   ]

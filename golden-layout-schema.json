@@ -1,4 +1,5 @@
 {
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "definitions": {
     "content": {
       "type": "array",
@@ -135,6 +136,27 @@
           "description": "The height of the element that appears when an item is dragged (in pixel)"
         }
       }
+    },
+    "labels": {
+      "type": "object",
+      "properties": {
+        "close": {
+          "type": "string",
+          "description": "The tooltip text that appears when hovering over the close icon"
+        },
+        "maximise": {
+          "type": "string",
+          "description": "The tooltip text that appears when hovering over the maximise icon"
+        },
+        "minimise": {
+          "type": "string",
+          "description": "The tooltip text that appears when hovering over the minimise icon"
+        },
+        "popout": {
+          "type": "string",
+          "description": "The tooltip text that appears when hovering over the popout icon"
+        }
+      }
     }
   },
   "type": "object",
@@ -142,14 +164,17 @@
     "content"
   ],
   "properties": {
-    "settings": {
-      "$ref": "#/definitions/settings"
-    },
     "content": {
       "$ref": "#/definitions/content"
     },
+    "settings": {
+      "$ref": "#/definitions/settings"
+    },
     "dimensions": {
       "$ref": "#/definitions/dimensions"
+    },
+    "labels": {
+      "$ref": "#/definitions/labels"
     }
   },
   "additionalProperties": false

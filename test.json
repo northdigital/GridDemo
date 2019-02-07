@@ -5,6 +5,9 @@
   "dimensions": {
     "borderWidth": 22
   },
+  "labels": {
+    "close": "close"
+  },
   "content": [
     {
       "type": "row",

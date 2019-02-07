@@ -1,4 +1,7 @@
 {
+  "settings": {
+    "blockedPopoutsThrowError": true
+  },
   "content": [
     {
       "type": "row",
@@ -6,9 +9,11 @@
       "componentName": "",
       "componentState": {
       },
-      "content": {
-
-      }
+      "content": [{
+        "type": "column",
+        "id": "",
+        "componentName": ""
+      }]
     }
   ]
 }

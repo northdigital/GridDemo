@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grid Demo</title>
+
+  <script src="js/lib/jquery/jquery.js"></script>
+  <script src="js/lib/golden-layout/goldenlayout.js"></script>
+
+  <link rel="stylesheet" href="js/lib/golden-layout/css/goldenlayout-base.css">
+  <link rel="stylesheet" href="js/lib/golden-layout/css/goldenlayout-dark-theme.css">
+</head>
+<body>
+
+<div id="">
+  <div id="menuContainer" style="width: 500px; height: 100px"></div>
+  <div id="layoutContainer" style="width: 100%; height: 500px"></div>
+</div>
+
+<script>
+
+  let config = {
+    content: [{
+      type: 'row',
+      content: [{
+        title: 'tabakis 1',
+        type: 'component',
+        componentName: 'testComponent',
+        componentState: {
+          firstName: 'Lakis',
+          lastName: 'Lalakis',
+        }
+      }, {
+        type: 'column',
+        content: [{
+          title: 'tabakis 2',
+          type: 'component',
+          componentName: 'testComponent',
+          componentState: {
+            firstName: 'Fofi',
+            lastName: 'Pofi',
+          }
+        }, {
+          title: 'tabakis 3',
+          type: 'component',
+          componentName: 'testComponent',
+          componentState: {
+            firstName: 'Pokos',
+            lastName: 'Tokos',
+          }
+        }]
+      }]
+    }]
+  };
+
+  $(() => {
+    let myLayout = new GoldenLayout(config, $("#layoutContainer"));
+
+    myLayout.registerComponent('testComponent', function (container, componentState) {
+      container.getElement().html( '<h2>' + `${componentState.firstName} ${componentState.lastName}` + '</h2>' );
+    });
+
+    myLayout.init();
+  });
+</script>
+</body>
+</html>

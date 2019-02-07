@@ -2,6 +2,9 @@
   "settings": {
     "blockedPopoutsThrowError": true
   },
+  "dimensions": {
+    "borderWidth": 22
+  },
   "content": [
     {
       "type": "row",

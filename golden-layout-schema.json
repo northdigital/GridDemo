@@ -106,6 +106,35 @@
           "description": "Specifies if the close icon should be displayed in the header-bar"
         }
       }
+    },
+    "dimensions": {
+      "type": "object",
+      "properties": {
+        "borderWidth": {
+          "type": "integer",
+          "description": "The width of the borders between the layout items in pixel. Please note: The actual draggable area is wider than the visible one, making it safe to set this to small values without affecting usability"
+        },
+        "minItemHeight": {
+          "type": "integer",
+          "description": "The minimum height an item can be resized to (in pixel)"
+        },
+        "minItemWidth": {
+          "type": "integer",
+          "description": "The minimum width an item can be resized to (in pixel)"
+        },
+        "headerHeight": {
+          "type": "integer",
+          "description": "The height of the header elements in pixel. This can be changed, but your theme's header css needs to be adjusted accordingly"
+        },
+        "dragProxyWidth": {
+          "type": "integer",
+          "description": "The width of the element that appears when an item is dragged (in pixel)"
+        },
+        "dragProxyHeight": {
+          "type": "integer",
+          "description": "The height of the element that appears when an item is dragged (in pixel)"
+        }
+      }
     }
   },
   "type": "object",
@@ -118,6 +147,9 @@
     },
     "content": {
       "$ref": "#/definitions/content"
+    },
+    "dimensions": {
+      "$ref": "#/definitions/dimensions"
     }
   },
   "additionalProperties": false

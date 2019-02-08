@@ -8,9 +8,7 @@
   "items": {
     "type": "object",
     "required": [
-      "type",
-      "componentName",
-      "id"
+      "type"
     ],
     "properties": {
       "type": {

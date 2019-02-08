@@ -19,49 +19,32 @@
 
 <script>
 
-  let config = {
-    content: [{
-      type: 'row',
-      content: [{
-        title: 'tabakis 1',
-        type: 'component',
-        componentName: 'testComponent',
-        componentState: {
-          firstName: 'Lakis',
-          lastName: 'Lalakis',
-        }
-      }, {
-        type: 'column',
-        content: [{
-          title: 'tabakis 2',
-          type: 'component',
-          componentName: 'testComponent',
-          componentState: {
-            firstName: 'Fofi',
-            lastName: 'Pofi',
-          }
-        }, {
-          title: 'tabakis 3',
-          type: 'component',
-          componentName: 'testComponent',
-          componentState: {
-            firstName: 'Pokos',
-            lastName: 'Tokos',
-          }
-        }]
-      }]
-    }]
-  };
+  async function getTemplate1() {
+    let response = await fetch('template1.html');
+    return await response.text();
+  }
 
-  $(() => {
-    let myLayout = new GoldenLayout(config, $("#layoutContainer"));
+  async function getConfig() {
+    let response = await fetch('js/LayoutConfig.json');
+    return await response.json();
+  }
+
+  async function createLayout() {
+    let myLayout = new GoldenLayout(await getConfig(), $("#layoutContainer"));
+
+    let html = $("<div></div>");
+    html.append(await getTemplate1());
 
     myLayout.registerComponent('testComponent', function (container, componentState) {
-      container.getElement().html( '<h2>' + `${componentState.firstName} ${componentState.lastName}` + '</h2>' );
+      container.getElement().html(html.get(0).outerHTML);
     });
-
     myLayout.init();
+  }
+
+  $(async () => {
+    await createLayout();
   });
+
 </script>
 </body>
 </html>

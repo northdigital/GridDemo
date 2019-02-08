@@ -12,6 +12,9 @@
               <option name="patterns">
                 <list>
                   <Item>
+                    <option name="path" value="js/LayoutConfig.json" />
+                  </Item>
+                  <Item>
                     <option name="path" value="json-schema/test.json" />
                   </Item>
                 </list>

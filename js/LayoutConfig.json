@@ -1,0 +1,33 @@
+{
+  "content": [{
+    "type": "row",
+    "content": [{
+      "title": "tabakis 1",
+      "type": "component",
+      "componentName": "testComponent",
+      "componentState": {
+        "firstName": "Lakis",
+        "lastName": "Lalakis"
+      }
+    }, {
+      "type": "column",
+      "content": [{
+        "title": "tabakis 2",
+        "type": "component",
+        "componentName": "testComponent",
+        "componentState": {
+          "firstName": "Fofi",
+          "lastName": "Pofi"
+        }
+      }, {
+        "title": "tabakis 3",
+        "type": "component",
+        "componentName": "testComponent",
+        "componentState": {
+          "firstName": "Pokos",
+          "lastName": "Tokos"
+        }
+      }]
+    }]
+  }]
+}

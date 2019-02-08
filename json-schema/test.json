@@ -1,19 +1,31 @@
 {
-  "settings": {
-    "blockedPopoutsThrowError": false
-  },
-  "dimensions": {
-    "borderWidth": 1
-  },
-  "labels": {
-    "close": "close",
-    "maximise": "maximize"
-  },
   "content": [
     {
+      "id": "xxx",
       "type": "row",
-      "componentName": "aaa",
-      "id": "bbb"
+      "componentName": "",
+      "componentState": {
+      },
+      "content": [
+        {
+          "id": "sss",
+          "type": "column",
+          "componentName": "aaaa",
+          "isClosable": true
+        }
+      ]
     }
-  ]
+  ],
+  "dimensions": {
+    "dragProxyHeight": 111,
+    "minItemHeight": 1111
+  },
+  "labels": {
+    "close": "ssss"
+  },
+  "settings": {
+    "blockedPopoutsThrowError": false,
+    "reorderEnabled": false,
+    "showMaximiseIcon": true
+  }
 }

@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://northdigital.gr/labels.json",
+
+  "type": "object",
+  "properties": {
+    "close": {
+      "type": "string",
+      "description": "The tooltip text that appears when hovering over the close icon"
+    },
+    "maximise": {
+      "type": "string",
+      "description": "The tooltip text that appears when hovering over the maximise icon"
+    },
+    "minimise": {
+      "type": "string",
+      "description": "The tooltip text that appears when hovering over the minimise icon"
+    },
+    "popout": {
+      "type": "string",
+      "description": "The tooltip text that appears when hovering over the popout icon"
+    }
+  }
+}

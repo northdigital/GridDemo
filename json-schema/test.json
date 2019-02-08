@@ -1,0 +1,19 @@
+{
+  "settings": {
+    "blockedPopoutsThrowError": false
+  },
+  "dimensions": {
+    "borderWidth": 1
+  },
+  "labels": {
+    "close": "close",
+    "maximise": "maximize"
+  },
+  "content": [
+    {
+      "type": "row",
+      "componentName": "aaa",
+      "id": "bbb"
+    }
+  ]
+}

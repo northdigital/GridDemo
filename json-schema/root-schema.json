@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://northdigital.gr/golden-layout.json",
+
+  "type": "object",
+  "required": [
+    "content"
+  ],
+  "properties": {
+    "content": {
+      "$ref": "./content-schema.json"
+    },
+    "settings": {
+      "$ref": "./settings-schema.json"
+    },
+    "dimensions": {
+      "$ref": "./dimension-schema.json"
+    },
+    "labels": {
+      "$ref": "./labels-schema.json"
+    }
+  },
+  "additionalProperties": false
+}

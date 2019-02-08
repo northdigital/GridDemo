@@ -3,15 +3,16 @@
   <component name="JsonSchemaMappingsProjectConfiguration">
     <state>
       <map>
-        <entry key="golden-layout-schema">
+        <entry key="root-schema">
           <value>
             <SchemaInfo>
-              <option name="name" value="golden-layout-schema" />
-              <option name="relativePathToSchema" value="golden-layout-schema.json" />
+              <option name="name" value="root-schema" />
+              <option name="relativePathToSchema" value="json-schema\root-schema.json" />
+              <option name="schemaVersion" value="JSON schema version 7" />
               <option name="patterns">
                 <list>
                   <Item>
-                    <option name="path" value="test.json" />
+                    <option name="path" value="json-schema/test.json" />
                   </Item>
                 </list>
               </option>
